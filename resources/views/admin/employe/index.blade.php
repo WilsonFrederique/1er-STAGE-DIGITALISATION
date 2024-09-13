@@ -20,10 +20,15 @@
                         </li>
                     </ul>
                 </div>
-                <a href="{{ route('app_form_employe') }}" class="btn-download">
-                    <i class='bx bx-plus-medical'></i>
-                    <span class="text">Nouveau Employe</span>
-                </a>
+                <div class="btn-imprimer-ajout">
+                    <a href="#" class="imprimer-tout">
+                        <i class='bx bx-printer'></i>
+                    </a>
+                    <a href="{{ route('app_form_employe') }}" class="btn-download">
+                        <i class='bx bx-plus-medical'></i>
+                        <span class="text">Nouveau Employe</span>
+                    </a>
+                </div>
             </div>
 
             <!-- ************************************************ -->
@@ -33,11 +38,11 @@
                     <i class='bx bxs-notification'></i>
                     <span class="text">
                         <h3 class="txt-box-top">2830</h3>
-                        <p class="txt-box-bottom">Total Présent(e)s</p>
+                        <p class="txt-box-bottom">Total des Employés</p>
                     </span>
                 </li>
                 <li>
-                    <i class='bx bxs-notification-off' ></i>
+                    <i class='bx bxs-notification'></i>
                     <span class="text">
                         <h3 class="txt-box-top">1943</h3>
                         <p class="txt-box-bottom">Total Present(e)s</p>
@@ -128,6 +133,7 @@
                         <li class="not-completed">
                             <p>Todo List</p>
                             <div class="icon-container">
+                                <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                 <a href="#"><i class='bx bx-edit btn-modif' style='color:#0a6202'  ></i></a>
                                 <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                             </div>
@@ -135,6 +141,7 @@
                         <li class="not-completed">
                             <p>Todo List</p>
                             <div class="icon-container">
+                                <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                 <a href="#"><i class='bx bx-edit btn-modif' style='color:#0a6202'  ></i></a>
                                 <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                             </div>
@@ -142,6 +149,7 @@
                         <li class="not-completed">
                             <p>Todo List</p>
                             <div class="icon-container">
+                                <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                 <a href="#"><i class='bx bx-edit btn-modif' style='color:#0a6202'  ></i></a>
                                 <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                             </div>
@@ -149,6 +157,7 @@
                         <li class="not-completed">
                             <p>Todo List</p>
                             <div class="icon-container">
+                                <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                 <a href="#"><i class='bx bx-edit btn-modif' style='color:#0a6202'  ></i></a>
                                 <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                             </div>
@@ -156,6 +165,7 @@
                         <li class="not-completed">
                             <p>Todo List</p>
                             <div class="icon-container">
+                                <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                 <a href="#"><i class='bx bx-edit btn-modif' style='color:#0a6202'  ></i></a>
                                 <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                             </div>
@@ -163,6 +173,7 @@
                         <li class="not-completed">
                             <p>Todo List</p>
                             <div class="icon-container">
+                                <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                 <a href="#"><i class='bx bx-edit btn-modif' style='color:#0a6202'  ></i></a>
                                 <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                             </div>

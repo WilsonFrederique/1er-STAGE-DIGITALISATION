@@ -20,10 +20,15 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="btn-download">
-                    <i class='bx bx-plus-medical'></i>
-                    <span class="text">Nouveau Permission</span>
-                </a>
+                <div class="btn-imprimer-ajout">
+                    <a href="#" class="imprimer-tout">
+                        <i class='bx bx-printer'></i>
+                    </a>
+                    <a href="#" class="btn-download">
+                        <i class='bx bx-plus-medical'></i>
+                        <span class="text">Nouveau Permission</span>
+                    </a>
+                </div>
             </div>
 
             <!-- ************************************************ -->
@@ -47,6 +52,7 @@
                             </div>
                             <div class="QR-icon">
                                 <div class="icon-container icon-del-mod-qr">
+                                    <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                     <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
                                     <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
@@ -64,6 +70,7 @@
                             </div>
                             <div class="QR-icon">
                                 <div class="icon-container icon-del-mod-qr">
+                                    <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                     <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
                                     <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
@@ -81,6 +88,7 @@
                             </div>
                             <div class="QR-icon">
                                 <div class="icon-container icon-del-mod-qr">
+                                    <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                     <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
                                     <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
@@ -98,6 +106,7 @@
                             </div>
                             <div class="QR-icon">
                                 <div class="icon-container icon-del-mod-qr">
+                                    <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                     <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
                                     <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
@@ -115,6 +124,7 @@
                             </div>
                             <div class="QR-icon">
                                 <div class="icon-container icon-del-mod-qr">
+                                    <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                     <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
                                     <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
@@ -132,6 +142,25 @@
                             </div>
                             <div class="QR-icon">
                                 <div class="icon-container icon-del-mod-qr">
+                                    <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
+                                    <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
+                                    <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a>
+                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="permission">
+                            <div class="todo-item">
+                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
+                                <div class="txt-left">
+                                    <p id="p">8181 5656 8989 2525</p>
+                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
+                                    <p class="date-permission">03-10-2024</p>
+                                </div>
+                            </div>
+                            <div class="QR-icon">
+                                <div class="icon-container icon-del-mod-qr">
+                                    <a href="#"><i class='bx bx-printer' style='color:#228e8a'  ></i></a>
                                     <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
                                     <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>

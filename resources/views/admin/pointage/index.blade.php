@@ -20,10 +20,15 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="btn-download">
-                    <i class='bx bx-plus-medical'></i>
-                    <span class="text">Nouveau Pointage</span>
-                </a>
+                <div class="btn-imprimer-ajout">
+                    <a href="#" class="imprimer-tout">
+                        <i class='bx bx-printer'></i>
+                    </a>
+                    <a href="#" class="btn-download">
+                        <i class='bx bx-plus-medical'></i>
+                        <span class="text">Nouveau Pointage</span>
+                    </a>
+                </div>
             </div>
 
             <!-- ************************************************ -->

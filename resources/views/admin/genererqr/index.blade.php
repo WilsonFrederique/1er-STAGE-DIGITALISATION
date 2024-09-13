@@ -23,10 +23,15 @@
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="btn-download genererQR">
-                    <i class='bx bx-plus-medical'></i>
-                    <span class="text">Générer code QR</span>
-                </a>
+                <div class="btn-imprimer-ajout">
+                    <a href="#" class="imprimer-tout">
+                        <i class='bx bx-printer'></i>
+                    </a>
+                    <a href="" class="btn-download genererQR">
+                        <i class='bx bx-plus-medical'></i>
+                        <span class="text">Générer code QR</span>
+                    </a>
+                </div>
             </div>
 
             <!-- ********************* TBL AFFICHAGE *********************** -->
@@ -54,8 +59,8 @@
                             <div class="QR-icon">
                                 <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
                                 <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
-                                    {{-- <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a> --}}
+                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                                 </div>
                             </div>
@@ -71,8 +76,8 @@
                             <div class="QR-icon">
                                 <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
                                 <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
-                                    {{-- <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a> --}}
+                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                                 </div>
                             </div>
@@ -88,8 +93,8 @@
                             <div class="QR-icon">
                                 <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
                                 <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
-                                    {{-- <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a> --}}
+                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                                 </div>
                             </div>
@@ -105,8 +110,8 @@
                             <div class="QR-icon">
                                 <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
                                 <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
-                                    {{-- <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a> --}}
+                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                                 </div>
                             </div>
@@ -122,8 +127,8 @@
                             <div class="QR-icon">
                                 <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
                                 <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
-                                    {{-- <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a> --}}
+                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                                 </div>
                             </div>
@@ -139,8 +144,25 @@
                             <div class="QR-icon">
                                 <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
                                 <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bx-detail' style='color:#1f2dad'  ></i></a>
-                                    {{-- <a href="#"><i class='bx bx-edit' style='color:#0a6202'  ></i></a> --}}
+                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
+                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="not-completed">
+                            <div class="todo-item">
+                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
+                                <div class="txt-left">
+                                    <p id="p">8181 5656 8989 2525</p>
+                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
+                                </div>
+                            </div>
+                            <div class="QR-icon">
+                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
+                                <div class="icon-container icon-del-mod-qr">
+                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
                                     <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
                                 </div>
                             </div>
@@ -151,20 +173,21 @@
 
             <!-- *********************** FORMULAIRE ************************ -->
 
+            <!-- Overlay et Formulaire QR -->
             <div class="overlay hidden"></div>
-            <div class="form-QR hidden">
-                <div class="container-QR">
+            <div class="container-conge hidden">
+                <div class="cntr-QR">
                     <form action="#">
                         <p class="p-x"><i class='bx bx-x icon-x'></i></p>
-                        <p class="txt-header-input-qr">N° CIN D'EMPLOYE</p>
-                        <input type="text" placeholder="CIN" id="qrText">
-
-                        <div id="imgBox">
-                            <img src="" id="qrImage">
+                        <p>Entrer votre Nom</p>
+                        <input type="text" placeholder="Nom" id="qrTextInput">
+            
+                        <div id="imgBoxAffiche">
+                            <img src="" id="qrImageSurLien">
                         </div>
-
-                        <button type="button" onclick="genererQR()">GENERER QR</button>
-                    </form>
+            
+                        <button onclick="gnrQR()">Generer QR</button>
+                    </form> 
                 </div>
             </div>
 
@@ -173,7 +196,8 @@
 
 @endsection
 
-{{-- ===== Css pour générer form ====== --}}
+
+{{-- ------------------- Css pour visible ei invisible du fr------------------------- --}}
 <style>
     /* ------------------------ ETO MIGERER ANLE IZ HOE REHEFA MIALA LE FRM DE AZO KITIHINA TSARA LE PROGE ---------------------- */
     .overlay {
@@ -191,52 +215,53 @@
         display: none;
     }
 
-    .form-QR.hidden {
+    .container-conge.hidden {
         display: none;
     }
 
-    .form-QR {
+    .container-conge {
         top: 0%;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
         height: 100vh;
-        /* border: 2px solid red; */
         position: fixed;
         padding: 36px 24px;
-        /* background: white; */
+        /* background: rgb(192, 39, 39); */
     }
 
-    /* --------------------------------------------- ATO KOSA NO CSS ANLE FORM ------------------------------------------------ */
+</style>
 
-    /* *************************** Container ***************************  */
-    .container-QR {
+
+{{-- ----------------------------- Css pour la formulaire --------------------------- --}}
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    body{
+        background: #262a2f;
+    }
+
+    .cntr-QR{
         width: 400px;
         padding: 25px 35px;
-        position: fixed; /* Corrige de relative à fixed pour être en avant-plan */
+        position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%);
         background: var(--color-bg-container-qr);
         border-radius: 10px;
     }
 
-    /* ****** Ito no mampipoitra anle css rehefa nikitik btn ajout ****** */
-    .container-QR.active-poput {
-        transform: translate(-50%, -50%) scale(1);
-    }
-
-    /* **************** Css anle form amn ankampobeny ******************* */
-        .txt-header-input-qr{
-        color: var(--txt-header-input-qr);
-    }
-
-    /* ---- Btn x pour qr ----  */
     .icon-x{
         position: absolute;
         top: 8px;
         right: 7px;
-        border: 1px solid rgb(212, 84, 84);
+        border: 1px solid var(--color-border-btn-x);
         height: 23px;
         border-radius: 50%;
         cursor: pointer;
@@ -248,25 +273,17 @@
         color: #fff;
         border-radius: 50%;
         height: 23px;
+        border: 1px solid var(--color-border-btn-x-hover);
     }
 
-    /* ----- Css dans container form qr -------- */
-
-    *{
-        padding: 0;
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        box-sizing: border-box;
-    }
-
-
-    .container-QR p{
+    .cntr-QR p{
         font-weight: 600;
         font-size: 15px;
         margin-bottom: 8px;
+        color: var(--txt-header-input-qr);
     }
 
-    .container-QR input{
+    .cntr-QR input{
         width: 100%;
         height: 50px;
         border: 1px solid #494eea;
@@ -276,7 +293,7 @@
         border-radius: 5px;
     }
 
-    .container-QR button{
+    .cntr-QR button{
         width: 100%;
         height: 50px;
         background: #494eea;
@@ -290,7 +307,7 @@
         font-weight: 500;
     }
 
-    #imgBox{
+    #imgBoxAffiche{
         width: 200px;
         border-radius: 5px;
         max-height: 0;
@@ -298,12 +315,12 @@
         transition: max-height 1s;
     }
 
-    #imgBox img{
+    #imgBoxAffiche img{
         width: 100%;
         height: 200px;
     }
 
-    #imgBox.show-img{
+    #imgBoxAffiche.show-img{
         max-height: 300px;
         margin: 10px auto;
         border: 1px solid #d1d1d1;
@@ -332,65 +349,75 @@
     }
 </style>
 
-{{-- =========== Js cript ============= --}}
-
+{{-- ---------------------- Scrip pour visible ou invisible -------------------------- --}}
 <script>
-    // --------- Pour btn générer QR ---------
+
+    // ================= Pour la btn Ajout =================
     document.addEventListener('DOMContentLoaded', function () {
-        // Sélection des éléments nécessaires
+
         const overlay = document.querySelector('.overlay');
-        const formQR = document.querySelector('.form-QR');
+        const formQR = document.querySelector('.container-conge');
         const btnGenererQR = document.querySelector('.btn-download.genererQR');
         const btnClose = document.querySelector('.icon-x');
 
         if (btnGenererQR && overlay && formQR && btnClose) {
-            // Fonction pour afficher le formulaire QR
             btnGenererQR.addEventListener('click', function (event) {
-                event.preventDefault(); // Empêche le comportement par défaut du lien
+                event.preventDefault();
                 overlay.classList.remove('hidden');
                 formQR.classList.remove('hidden');
-                document.querySelector('.container-QR').classList.add('active-poput');
+                document.querySelector('.cntr-QR').classList.add('active-poput');
+            });
+
+            overlay.addEventListener('click', function () {
+                overlay.classList.add('hidden');
+                formQR.classList.add('hidden');
+                document.querySelector('.cntr-QR').classList.remove('active-poput');
             });
 
             // Fonction pour fermer le formulaire QR
             btnClose.addEventListener('click', function () {
                 overlay.classList.add('hidden');
                 formQR.classList.add('hidden');
-                document.querySelector('.container-QR').classList.remove('active-poput');
+                document.querySelector('.container-conge').classList.remove('active-poput');
             });
+
         } else {
             console.error('Un ou plusieurs éléments sont introuvables.');
         }
     });
 
-    // ------ Pour Icon plus générer QR ------
-    document.addEventListener('DOMContentLoaded', function () {
-        // Sélection des éléments nécessaires
-        const overlay = document.querySelector('.overlay');
-        const formQR = document.querySelector('.form-QR');
-        const btnGenererQrIconPlus = document.querySelector('.icon-plus-genererQR');
-        const btnClose = document.querySelector('.icon-x');
+    // ================= Pour la btn Modif =================
+    // document.addEventListener('DOMContentLoaded', function () {
 
-        if (btnGenererQrIconPlus && overlay && formQR && btnClose) {
-            // Fonction pour afficher le formulaire QR
-            btnGenererQrIconPlus.addEventListener('click', function (event) {
-                event.preventDefault(); // Empêche le comportement par défaut du lien
-                overlay.classList.remove('hidden');
-                formQR.classList.remove('hidden');
-                document.querySelector('.container-QR').classList.add('active-poput');
-            });
+    //     const overlay = document.querySelector('.overlay');
+    //     const formQR = document.querySelector('.container-conge');
+    //     const btnGenererQR = document.querySelector('.icon-modf-conge');
+    //     const btnClose = document.querySelector('.icon-x');
 
-            // Fonction pour fermer le formulaire QR
-            btnClose.addEventListener('click', function () {
-                overlay.classList.add('hidden');
-                formQR.classList.add('hidden');
-                document.querySelector('.container-QR').classList.remove('active-poput');
-            });
-        } else {
-            console.error('Un ou plusieurs éléments sont introuvables.');
-        }
-    });
+    //     if (btnGenererQR && overlay && formQR && btnClose) {
+    //         btnGenererQR.addEventListener('click', function (event) {
+    //             event.preventDefault();
+    //             overlay.classList.remove('hidden');
+    //             formQR.classList.remove('hidden');
+    //             document.querySelector('.cntr-QR').classList.add('active-poput');
+    //         });
+
+    //         overlay.addEventListener('click', function () {
+    //             overlay.classList.add('hidden');
+    //             formQR.classList.add('hidden');
+    //             document.querySelector('.cntr-QR').classList.remove('active-poput');
+    //         });
+
+    //         // Fonction pour fermer le formulaire QR
+    //         btnClose.addEventListener('click', function () {
+    //             overlay.classList.add('hidden');
+    //             formQR.classList.add('hidden');
+    //             document.querySelector('.container-conge').classList.remove('active-poput');
+    //         });
+
+    //     } else {
+    //         console.error('Un ou plusieurs éléments sont introuvables.');
+    //     }
+    // });
+
 </script>
-
-
-

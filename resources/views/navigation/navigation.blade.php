@@ -7,6 +7,12 @@
     </a>
     <ul class="side-menu top">
         <li class="active">
+            <a href="">
+                <i class='bx bx-book-bookmark'></i>
+                <span class="text txt-page">Page</span>
+            </a>
+        </li>
+        <li>
             <a href="{{ route('app_accueil') }}">
                 <i class='bx bxs-dashboard'></i>
                 <span class="text txt-page">Home</span>
@@ -32,7 +38,7 @@
         </li>
         <li>
             <a href="{{ route('app_permission') }}">
-                <i class='bx bx-copyright'></i>
+                <i class='bx bx-universal-access'></i>
                 <span class="text">Permission</span>
             </a>
         </li>

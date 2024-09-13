@@ -84,6 +84,17 @@ li{
 
     --color-bg-container-qr: #1e1e1f;
     --txt-header-input-qr: #d2d3d4c5;
+
+    --color-bg-form-conge: #1e1e1f;
+    --color-border-btn-x: #c74b47;
+    --color-border-btn-x-hover: #fff;
+
+    --color-bienvenue: #1d1e1fce;
+
+    --color-btn-imprimer-tout: transparent;
+    --color-txt-imprimer-tout: #080808;
+    --color-btn-imprimer-tout-hover: #374e70;
+    --color-txt-imprimer-tout-hover: #fff;
 }
 
 .dark-theme-variables{
@@ -139,6 +150,14 @@ li{
     --color-bg-container-qr: #ebecf0;
     --txt-header-input-qr: #181718;
 
+    --color-bg-form-conge: #fff;
+    --color-border-btn-x-hover: #1e1e1f;
+
+    --color-bienvenue: #bdb9b9a1;
+
+    --color-txt-imprimer-tout: #c4bcbc;
+    --color-btn-imprimer-tout-hover: #162031;
+    --color-txt-imprimer-tout-hover: #fff;
 }
 
 html{
@@ -148,6 +167,40 @@ html{
 body{
     background: var(--grey);
     overflow-x: hidden;
+}
+
+.btn-imprimer-ajout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#content main .head-title .imprimer-tout{
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--color-btn-imprimer-tout);
+    color: var(--color-txt-imprimer-tout);
+    border: 1px solid var(--color-txt-imprimer-tout);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    font-weight: 600;
+    transition: .3s all;
+}
+#content main .head-title .imprimer-tout:hover{
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--color-btn-imprimer-tout-hover);
+    color: var(--color-txt-imprimer-tout-hover);
+    border: 1px solid var(--color-txt-imprimer-tout-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    font-weight: 600;
 }
 
 #sidebar{
