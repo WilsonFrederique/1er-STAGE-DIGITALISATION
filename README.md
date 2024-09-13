@@ -1,5 +1,8 @@
 # APPLICATION WEB ( Image )
 
+Bienvenue :
+![Chargement](./README_IMAGES/0.png)
+
 Page des employés (mode sombre)
 ![Chargement](./README_IMAGES/1.png)
 
