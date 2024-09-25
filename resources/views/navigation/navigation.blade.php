@@ -3,6 +3,11 @@
     <a href="#" class="brand">
         {{-- <i class='bx bxs-smile'></i> --}}
         <img class="imgLogo" src="{{ asset('assets/images/logo1.png') }}" alt="">
+        
+        {{-- @foreach ($entreprises as $entreprise)
+            <span class="text txt-logo">{{ $entreprise->NomEntreprise }}</span>
+        @endforeach --}}
+
         <span class="text txt-logo">REGION ANOSY</span>
     </a>
     <ul class="side-menu top">
@@ -19,31 +24,31 @@
             </a>
         </li>
         <li>
-            <a href="{{ route('app_employe') }}" class="employe">
+            <a href="{{ route('admin.employes.index') }}" class="employe">
                 <i class='bx bxs-group' ></i>
                 <span class="text">Employees</span>
             </a>
         </li>
         <li>
-            <a href="{{ route('app_genererqr') }}">
+            <a href="{{ route('admin.genereqrs.index') }}">
                 <i class='bx bx-qr-scan' ></i>
                 <span class="text">Générer QR</span>
             </a>
         </li>
         <li>
-            <a href="{{ route('app_pointage') }}">
+            <a href="#">
                 <i class='bx bx-street-view'></i>
                 <span class="text">Pointages</span>
             </a>
         </li>
         <li>
-            <a href="{{ route('app_permission') }}">
+            <a href="{{ route('admin.permissions.index') }}">
                 <i class='bx bx-universal-access'></i>
                 <span class="text">Permission</span>
             </a>
         </li>
         <li>
-            <a href="{{ route('app_conge') }}">
+            <a href="#">
                 <i class='bx bx-copyright'></i>
                 <span class="text">Conges</span>
             </a>
@@ -51,7 +56,7 @@
     </ul>
     <ul class="side-menu">
         <li>
-            <a href="#">
+            <a href="{{ route('admin.parametres.index') }}">
                 <i class='bx bxs-cog' ></i>
                 <span class="text">Paramètres</span>
             </a>
@@ -73,7 +78,7 @@
         <a href="#" class="nav-link">Categories</a>
         <form action="#">
             <div class="form-input">
-                <input type="search" placeholder="Recherche...">
+                <input name="Rechercher" type="search" placeholder="Recherche...">
                 <button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
             </div>
         </form>

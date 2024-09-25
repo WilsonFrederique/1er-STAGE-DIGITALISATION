@@ -1,3 +1,6 @@
+{{-- ====================== JS Swiper ======================== --}}
+<script src="{{ asset('assets/lib/swiper/swiper-bundle.min.js') }}"></script>
+
 {{-- ================== Inoicon ===================== --}}
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -32,6 +35,15 @@
         let vid3 = document.getElementById("vid3");
         let vid4 = document.getElementById("vid4");
         let vid5 = document.getElementById("vid5");
+        let vid6 = document.getElementById("vid6");
+        let vid7 = document.getElementById("vid7");
+        let vid8 = document.getElementById("vid8");
+        let vid9 = document.getElementById("vid9");
+        let vid10 = document.getElementById("vid10");
+        let vid11 = document.getElementById("vid11");
+        let vid12 = document.getElementById("vid12");
+        let vid13 = document.getElementById("vid13");
+        let vid14 = document.getElementById("vid14");
 
         if (vid1.value.trim() === "") {
             vid1.classList.add('error');
@@ -68,6 +80,96 @@
         } else {
             vid4.classList.remove('error');
         }
+
+        if (vid5.value.trim() === "") {
+            vid5.classList.add('error');
+            setTimeout(() => {
+                vid5.classList.remove('error');
+            }, 1000);
+        } else {
+            vid5.classList.remove('error');
+        }
+
+        if (vid6.value.trim() === "") {
+            vid6.classList.add('error');
+            setTimeout(() => {
+                vid6.classList.remove('error');
+            }, 1000);
+        } else {
+            vid6.classList.remove('error');
+        }
+
+        if (vid7.value.trim() === "") {
+            vid7.classList.add('error');
+            setTimeout(() => {
+                vid7.classList.remove('error');
+            }, 1000);
+        } else {
+            vid7.classList.remove('error');
+        }
+
+        if (vid8.value.trim() === "") {
+            vid8.classList.add('error');
+            setTimeout(() => {
+                vid8.classList.remove('error');
+            }, 1000);
+        } else {
+            vid8.classList.remove('error');
+        }
+
+        if (vid9.value.trim() === "") {
+            vid9.classList.add('error');
+            setTimeout(() => {
+                vid9.classList.remove('error');
+            }, 1000);
+        } else {
+            vid9.classList.remove('error');
+        }
+
+        if (vid10.value.trim() === "") {
+            vid10.classList.add('error');
+            setTimeout(() => {
+                vid10.classList.remove('error');
+            }, 1000);
+        } else {
+            vid10.classList.remove('error');
+        }
+
+        if (vid11.value.trim() === "") {
+            vid11.classList.add('error');
+            setTimeout(() => {
+                vid11.classList.remove('error');
+            }, 1000);
+        } else {
+            vid11.classList.remove('error');
+        }
+
+        if (vid12.value.trim() === "") {
+            vid12.classList.add('error');
+            setTimeout(() => {
+                vid12.classList.remove('error');
+            }, 1000);
+        } else {
+            vid12.classList.remove('error');
+        }
+
+        if (vid13.value.trim() === "") {
+            vid13.classList.add('error');
+            setTimeout(() => {
+                vid13.classList.remove('error');
+            }, 1000);
+        } else {
+            vid13.classList.remove('error');
+        }
+
+        if (vid14.value.trim() === "") {
+            vid14.classList.add('error');
+            setTimeout(() => {
+                vid14.classList.remove('error');
+            }, 1000);
+        } else {
+            vid14.classList.remove('error');
+        }
     }
 
 </script>
@@ -87,8 +189,17 @@
         })
     });
 
-
     document.getElementById('content').style.overflow = 'scroll';
+
+    // const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li');
+
+    // allSideMenu.forEach(item => {
+    //     item.addEventListener('click', () => {
+    //         document.querySelector('#sidebar .side-menu.top li.active').classList.remove('active');
+    //         item.classList.add('active');
+    //     });
+    // });
+    // document.getElementById('content').style.overflow = 'scroll';
 
 
 

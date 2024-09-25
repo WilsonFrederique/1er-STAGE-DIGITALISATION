@@ -14,18 +14,18 @@
                         <li>
                             <a href="#">Code QR</a>
                         </li>
-                        <li><i class='bx bx-chevron-right' ></i></li>
+                        <li><i class='bx bx-chevron-right'></i></li>
                         <li>
-                            <a class="active" href="{{ route('app_genererqr') }}">Générer code QR</a>
+                            <a class="active" href="{{ route('admin.genereqrs.index') }}">Générer code QR</a>
                         </li>
-                        <li><i class='bx bx-chevron-right' ></i></li>
+                        <li><i class='bx bx-chevron-right'></i></li>
                         <li>
-                            <a class="active" href="{{ route('app_badje') }}">Code QR de Fred</a>
+                            <a class="active" href="">Code QR de {{ $genererqr->numEmp }}</a>
                         </li>
                     </ul>
                 </div>
                 <a href="#" class="btn-download">
-                    <i class='bx bxs-cloud-download' ></i>
+                    <i class='bx bxs-cloud-download'></i>
                     <span class="text">IMPRIMER</span>
                 </a>
             </div>
@@ -38,19 +38,20 @@
                         <div class="container container-badje">
                             <div class="en-tete-badje">
                                 <div class="profil-badje">
-                                    <img class="img-tete-badje" src="{{ asset('assets/images/imageQR.png') }}" alt="">
+                                    <img class="img-tete-badje" src="{{ $genererqr->imageqr }}" alt="">
                                 </div>
                                 <div class="txt-profil-badje">
-                                    <h5 class="number">4141 2520 2584 8565</h5>
-                                    <h3 class="txt-info-badje">Nom</h3>
-                                    <h3 class="txt-info-badje">Prenom</h3>
-                                    <p>Poste</p>
+                                    <h5 class="number">{{ $genererqr->numEmp }}</h5>
+                                    {{-- Affichage des données employes --}}
+                                    <h3 class="txt-info-badje">{{ $genererqr->employes->Nom }}</h3>
+                                    <h3 class="txt-info-badje">{{ $genererqr->employes->Prenom }}</h3>
+                                    <p>{{ $genererqr->employes->Poste }}</p>
                                 </div>
                             </div>
                             <div class="en-pied-badje">
                                 <br>
                                 <div class="place-num">
-                                    <h1 class="h1">Numéro : 034 00 000 00</h1>
+                                    <h1 class="h1">Numéro : <span class="span-num">{{ $genererqr->employes->Numero }}</span></h1>
                                 </div>
                             </div>
                         </div>
@@ -60,21 +61,23 @@
                         <div class="container container-badje">
                             <header class="header">
                                 <span class="logo logo-badje">
+                                    {{-- ---------- IMG Logo ---------- --}}
                                     <img class="img-badje" src="{{ asset('assets/images/logo1.png') }}" alt="">
                                     <h5 class="h5">REGION ANOSY</h5>
                                 </span>
-                                <img class="img-qr-badje" src="{{ asset('assets/images/admin.jpg') }}" alt="" class="chip">
+                                {{-- ---------- IMG Profil ---------- --}}
+                                <img class="img-qr-badje" src="{{ asset($genererqr->employes->images) }}" alt="" class="chip">
                             </header>
 
                             <div class="card-details">
                                 <div class="name-number">
                                     <h6>Numéro CIN</h6>
-                                    <h5 class="number">4141 2520 2584 8565</h5>
-                                    <H5 class="name">WILSON Frederique</H5>
+                                    <h5 class="number">{{ $genererqr->numEmp }}</h5>
+                                    <h5 class="name">{{ $genererqr->employes->Nom }} {{ $genererqr->employes->Prenom }}</h5>
                                 </div>
                                 <div class="valid-date">
                                     <h6>Validation</h6>
-                                    <h5>07-24-2024</h5>
+                                    <h5>{{ $genererqr->employes->DatEntre }}</h5>
                                 </div>
                             </div>
                         </div>
@@ -104,17 +107,23 @@
     .place-num{
         width: 100%;
         height: 50px;
-        box-shadow: 0 0 2px #fff;
+        box-shadow: 0 0 3px #fff;
         border-radius: 10px;
         display: flex;
         align-items: center;
-        background: #161616;
         backdrop-filter: blur(10px);
     }
     .h1{
         font-size: 25px;
         font-weight: 500;
         margin-left: 13px;
+        color: #aaa7a7;
+    }
+    .span-num{
+        font-size: 25px;
+        font-weight: 500;
+        margin-left: 13px;
+        letter-spacing: 2px;
     }
 </style>
 
@@ -143,6 +152,7 @@
         border-radius: 28px;
         max-width: 400px;
         width: 100%;
+        background-image: url('{{ asset('assets/images/bg.png') }}');
         box-shadow: 0 5px 10px rgba(88, 88, 88, 0.1);
     }
 

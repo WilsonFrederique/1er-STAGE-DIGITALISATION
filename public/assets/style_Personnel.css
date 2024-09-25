@@ -95,9 +95,34 @@ li{
     --color-txt-imprimer-tout: #080808;
     --color-btn-imprimer-tout-hover: #374e70;
     --color-txt-imprimer-tout-hover: #fff;
+
+    --color-bg-overlay-profil: #4070F4;
+    --color-overlay-befor-after: #eee6e6;
+    --color-border-card-image: #4070F4;
+    --color-btn-hover: #3067fcd2;
+    --color-swiper: red;
+    --color-bg-logo-paramtr: #616161ec;
+
+    --color-frm-employe-bg: #e6e5e5;
+    --color-border-frm-employe: #3a3d9c;
+    --color-border-frm-permission: #3a3d9c;
+    --color-bg-input-frm-employe: #f5f0f0;
+
+    --color-frm-parametre-bg-entreprise: #b8b8b8;
+
+    --color-frm-permission-bg: #e6e5e5;
 }
 
 .dark-theme-variables{
+
+    --color-frm-permission-bg: rgb(13, 16, 22);
+
+    --color-frm-employe-bg: rgb(13, 16, 22);
+    --color-border-frm-employe: #3a3d9c;
+    --color-bg-input-frm-employe: #eeebeb;
+
+    --color-frm-parametre-bg-entreprise: #c9c7c7;
+
     --grey: rgb(17, 20, 26);
     --light: rgb(13, 16, 22);
 
@@ -158,6 +183,13 @@ li{
     --color-txt-imprimer-tout: #c4bcbc;
     --color-btn-imprimer-tout-hover: #162031;
     --color-txt-imprimer-tout-hover: #fff;
+
+    --color-bg-overlay-profil: #162031;
+    --color-overlay-befor-after: #d3d3d3;
+    --color-border-card-image: #24395c;
+    --color-btn-hover: #243a61;
+
+    --color-bg-logo-paramtr: #61616138;
 }
 
 html{
@@ -167,6 +199,26 @@ html{
 body{
     background: var(--grey);
     overflow-x: hidden;
+}
+
+.img-form{
+    object-fit: cover;
+}
+
+.btn-suppr{
+    font-size: 16px;
+}
+
+.imgTodo{
+    object-fit: cover;
+}
+
+.img-qr-badje{
+    object-fit: cover;
+}
+
+.delt-qr{
+    font-size: 19px;
 }
 
 .btn-imprimer-ajout{

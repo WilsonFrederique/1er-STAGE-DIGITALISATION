@@ -48,125 +48,31 @@
                         </a>
                     </div>
                     <ul class="todo-list todo-color">
-                        <li class="not-completed">
-                            <div class="todo-item">
-                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
-                                <div class="txt-left">
-                                    <p id="p">8181 5656 8989 2525</p>
-                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
+                        @foreach ($genererqrs as $genererqr)
+                            <li class="not-completed">
+                                <div class="todo-item">
+                                    <img class="imgTodo" src="{{ asset($genererqr->employes->images) }}" alt="">
+                                    <div class="txt-left">
+                                        <p id="p">{{ $genererqr->numEmp }}</p>
+                                        <p>{{ $genererqr->employes->Nom }} {{ $genererqr->employes->Prenom }}</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="QR-icon">
-                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
-                                <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
-                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
-                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
+                                <div class="QR-icon">
+                                    <img src="{{ asset($genererqr->imageqr) }}" alt="" class="imgTodoQR">
+                                    <div class="icon-container icon-del-mod-qr">
+                                        <a href="{{ route('admin.genereqrs.show', $genererqr->id) }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
+                                        <i class='bx bx-printer' style='color:#228e8a'  ></i>
+                                        <form action="{{ route('admin.genereqrs.destroy', $genererqr->id) }}" method="POST">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" style="border: none; background: none; cursor: pointer;">
+                                                <a href="#"><i class='bx bx-trash delt-qr' style='color:#d01616'  ></i></a>
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="not-completed">
-                            <div class="todo-item">
-                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
-                                <div class="txt-left">
-                                    <p id="p">8181 5656 8989 2525</p>
-                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
-                                </div>
-                            </div>
-                            <div class="QR-icon">
-                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
-                                <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
-                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
-                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="not-completed">
-                            <div class="todo-item">
-                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
-                                <div class="txt-left">
-                                    <p id="p">8181 5656 8989 2525</p>
-                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
-                                </div>
-                            </div>
-                            <div class="QR-icon">
-                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
-                                <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
-                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
-                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="not-completed">
-                            <div class="todo-item">
-                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
-                                <div class="txt-left">
-                                    <p id="p">8181 5656 8989 2525</p>
-                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
-                                </div>
-                            </div>
-                            <div class="QR-icon">
-                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
-                                <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
-                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
-                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="not-completed">
-                            <div class="todo-item">
-                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
-                                <div class="txt-left">
-                                    <p id="p">8181 5656 8989 2525</p>
-                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
-                                </div>
-                            </div>
-                            <div class="QR-icon">
-                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
-                                <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
-                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
-                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="not-completed">
-                            <div class="todo-item">
-                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
-                                <div class="txt-left">
-                                    <p id="p">8181 5656 8989 2525</p>
-                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
-                                </div>
-                            </div>
-                            <div class="QR-icon">
-                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
-                                <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
-                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
-                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="not-completed">
-                            <div class="todo-item">
-                                <img class="imgTodo" src="{{ asset('assets/images/home1.png') }}" alt="">
-                                <div class="txt-left">
-                                    <p id="p">8181 5656 8989 2525</p>
-                                    <p>RAKOTOMANAMBINA Wilson Frederique</p>
-                                </div>
-                            </div>
-                            <div class="QR-icon">
-                                <img src="{{ asset('assets/images/imageQR.png') }}" alt="" class="imgTodoQR">
-                                <div class="icon-container icon-del-mod-qr">
-                                    <a href="{{ route('app_badje') }}"><i class='bx bxs-credit-card' style='color:#4954de'  ></i></a>
-                                    <i class='bx bx-printer' style='color:#228e8a'  ></i>
-                                    <a href="#"><i class='bx bx-trash' style='color:#d01616'  ></i></a>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -177,17 +83,67 @@
             <div class="overlay hidden"></div>
             <div class="container-conge hidden">
                 <div class="cntr-QR">
-                    <form action="#">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if (session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                    @endif
+
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    {{-- <form method="POST" action="{{ route('admin.genereqrs.store') }}" enctype="multipart/form-data">
                         <p class="p-x"><i class='bx bx-x icon-x'></i></p>
+                        @csrf
                         <p>Entrer votre Nom</p>
-                        <input type="text" placeholder="Nom" id="qrTextInput">
-            
+                        <input name="numEmp" type="text" placeholder="N° CIN" id="qrTextInput">
+
+                        <!-- Champ caché pour stocker le lien de l'image générée -->
+                        <input type="hidden" name="imageqr" id="qrImageInput">
+
                         <div id="imgBoxAffiche">
                             <img src="" id="qrImageSurLien">
                         </div>
-            
-                        <button onclick="gnrQR()">Generer QR</button>
-                    </form> 
+
+                        <button type="submit" onclick="gnrQR()">Generer QR</button>
+                    </form> --}}
+                    <form method="POST" action="{{ route('admin.genereqrs.store') }}" enctype="multipart/form-data" id="qrForm">
+                        <p class="p-x"><i class='bx bx-x icon-x'></i></p>
+                        @csrf
+                        <p>Entrer votre Nom</p>
+                        {{-- <input name="numEmp" type="text" placeholder="N° CIN" id="qrTextInput"> --}}
+                        <select class="select" id="qrTextInput" name="numEmp" placeholder="N° CIN">
+                            @foreach($employes as $employe)
+                                <option value="{{ $employe->numEmp }}"
+                                    {{ (isset($genererqr) && $employe->numEmp == $genererqr->numEmp) ? 'selected' : '' }}>
+                                    {{ $employe->Nom }}
+                                </option>
+                            @endforeach
+                        </select>
+
+                        <!-- Champ caché pour stocker le lien de l'image générée -->
+                        <input type="hidden" name="imageqr" id="qrImageInput">
+
+                        <div id="imgBoxAffiche">
+                            <img src="" id="qrImageSurLien">
+                        </div>
+
+                        <!-- Bouton avec appel à la fonction genererEtSoumettreQR -->
+                        <button type="button" onclick="genererEtSoumettreQR()">Generer QR</button>
+                    </form>
+
                 </div>
             </div>
 
@@ -197,7 +153,7 @@
 @endsection
 
 
-{{-- ------------------- Css pour visible ei invisible du fr------------------------- --}}
+{{-- ------------------- Css pour visible ei invisible du frm ----------------------- --}}
 <style>
     /* ------------------------ ETO MIGERER ANLE IZ HOE REHEFA MIALA LE FRM DE AZO KITIHINA TSARA LE PROGE ---------------------- */
     .overlay {
@@ -284,6 +240,16 @@
     }
 
     .cntr-QR input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid #494eea;
+        outline: 0;
+        padding: 10px;
+        margin: 10px 0 20px;
+        border-radius: 5px;
+    }
+
+    .cntr-QR .select{
         width: 100%;
         height: 50px;
         border: 1px solid #494eea;
@@ -386,38 +352,69 @@
         }
     });
 
-    // ================= Pour la btn Modif =================
-    // document.addEventListener('DOMContentLoaded', function () {
+    // ================= Pour la btn Ajout =================
+    document.addEventListener('DOMContentLoaded', function () {
 
-    //     const overlay = document.querySelector('.overlay');
-    //     const formQR = document.querySelector('.container-conge');
-    //     const btnGenererQR = document.querySelector('.icon-modf-conge');
-    //     const btnClose = document.querySelector('.icon-x');
+        const overlay = document.querySelector('.overlay');
+        const formQR = document.querySelector('.container-conge');
+        const btnGenererQR = document.querySelector('.icon-plus-genererQR');
+        const btnClose = document.querySelector('.icon-x');
 
-    //     if (btnGenererQR && overlay && formQR && btnClose) {
-    //         btnGenererQR.addEventListener('click', function (event) {
-    //             event.preventDefault();
-    //             overlay.classList.remove('hidden');
-    //             formQR.classList.remove('hidden');
-    //             document.querySelector('.cntr-QR').classList.add('active-poput');
-    //         });
+        if (btnGenererQR && overlay && formQR && btnClose) {
+            btnGenererQR.addEventListener('click', function (event) {
+                event.preventDefault();
+                overlay.classList.remove('hidden');
+                formQR.classList.remove('hidden');
+                document.querySelector('.cntr-QR').classList.add('active-poput');
+            });
 
-    //         overlay.addEventListener('click', function () {
-    //             overlay.classList.add('hidden');
-    //             formQR.classList.add('hidden');
-    //             document.querySelector('.cntr-QR').classList.remove('active-poput');
-    //         });
+            overlay.addEventListener('click', function () {
+                overlay.classList.add('hidden');
+                formQR.classList.add('hidden');
+                document.querySelector('.cntr-QR').classList.remove('active-poput');
+            });
 
-    //         // Fonction pour fermer le formulaire QR
-    //         btnClose.addEventListener('click', function () {
-    //             overlay.classList.add('hidden');
-    //             formQR.classList.add('hidden');
-    //             document.querySelector('.container-conge').classList.remove('active-poput');
-    //         });
+            // Fonction pour fermer le formulaire QR
+            btnClose.addEventListener('click', function () {
+                overlay.classList.add('hidden');
+                formQR.classList.add('hidden');
+                document.querySelector('.container-conge').classList.remove('active-poput');
+            });
 
-    //     } else {
-    //         console.error('Un ou plusieurs éléments sont introuvables.');
-    //     }
-    // });
+        } else {
+            console.error('Un ou plusieurs éléments sont introuvables.');
+        }
+    });
 
+</script>
+
+{{-- ------------------ Scrip pour enregistrer code QR dans SGBD --------------------- --}}
+<script>
+    function genererEtSoumettreQR() {
+        let imgBox = document.getElementById("imgBoxAffiche");
+        let qrImage = document.getElementById("qrImageSurLien");
+        let qrText = document.getElementById("qrTextInput");
+        let qrImageInput = document.getElementById("qrImageInput");
+
+        if (qrText.value.length > 0) {
+            let imageUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+
+            // Affiche l'image du QR code
+            qrImage.src = imageUrl;
+            qrImageInput.value = imageUrl; // Met à jour le champ caché avec le lien de l'image
+            imgBox.classList.add("show-img");
+
+            // Ajoute un délai pour que l'image du QR code soit bien affichée avant la soumission
+            setTimeout(function() {
+                // Soumet le formulaire une fois le QR code généré
+                document.getElementById("qrForm").submit();
+            }, 500);  // Délai de 500ms
+        } else {
+            // Si le champ texte est vide, on affiche une animation d'erreur
+            qrText.classList.add('error');
+            setTimeout(() => {
+                qrText.classList.remove('error');
+            }, 1000);
+        }
+    }
 </script>
