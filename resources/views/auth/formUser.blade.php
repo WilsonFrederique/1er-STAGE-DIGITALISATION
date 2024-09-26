@@ -215,32 +215,32 @@
         <!-- <img src="assets/images/bg1.jpg" alt="image" class="logon__bg"> -->
 
         <form action="" class="login__form">
-            <h1 class="login__title">Login</h1>
+            <h1 class="login__title">Register</h1>
 
             <div class="login__inputs">
                 <div class="login__box">
-                    <input type="email" required class="login__input" placeholder="Email ID">
+                    <input type="text" required class="login__input" placeholder="Entrer votre numéro CIN">
                     <i class="ri-mail-fill"></i>
                 </div>
                 <div class="login__box">
-                    <input type="password" required class="login__input" id="login-pass" placeholder="Password">
+                    <input type="text" required class="login__input" id="login-pass" placeholder="Entrer votre mail">
+                    <i class="ri-lock-2-fill login__eye" id="login-eye"></i>
+                </div>
+                <div class="login__box">
+                    <input type="text" required class="login__input" id="login-pass" placeholder="Nouveau Mot de passe">
                     <i class="ri-lock-2-fill login__eye" id="login-eye"></i>
                 </div>
             </div>
 
             <div class="login__check">
-                <div class="login__check-box">
-                    <input type="checkbox" class="login__check-input" id="user-check">
-                    <label for="user-check" class="login__check-label">Remember me</label>
-                </div>
-
-                <a href="#" class="login__forgot">Forgot Password?</a>
+                <input type="file" required class="login__input" id="login-pass" placeholder="Nouveau Mot de passe">
+                <i class="ri-lock-2-fill login__eye" id="login-eye"></i>
             </div>
 
             <button type="submit" class="login__button">Login</button>
 
             <p class="login__register">
-                Don't have an account? <a href="{{ route('auth.page_formUser') }}">Register</a>
+                Do you have an account? <a href="{{ route('auth.page_users') }}">Login</a>
             </p>
         </form>
     </div>

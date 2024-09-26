@@ -5,6 +5,7 @@ use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\EmployeController;
 use App\Http\Controllers\GenererQrController;
 use App\Http\Controllers\EntrepriseController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\UsersController;
 
@@ -15,6 +16,14 @@ Route::get('/', [UsersController::class, 'index'])->name('app_public');
 // Route::prefix('users')->name('users.')->group(function() {
 //     Route::resource('public', UsersController::class);
 // });
+
+Route::prefix('auth')->name('auth.')->group(function() {
+
+    Route::get('login.admin', [LoginController::class, 'loginAdmin'])->name('page_admin');
+    Route::get('login.users', [LoginController::class, 'loginPublic'])->name('page_users');
+    Route::get('formulaire.register', [LoginController::class, 'formUser'])->name('page_formUser');
+
+});
 
 Route::prefix('admin')->name('admin.')->group(function() {
     Route::resource('employes', EmployeController::class);
