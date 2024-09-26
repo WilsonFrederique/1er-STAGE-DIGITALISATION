@@ -1,6 +1,11 @@
 # APPLICATION WEB ( Image )
 
 Bienvenue :
+![Chargement](./README_IMAGES/P.png)
+
+![Chargement](./README_IMAGES/L.png)
+
+Admin
 ![Chargement](./README_IMAGES/0.png)
 
 Page des employés (mode sombre)
